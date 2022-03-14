@@ -8,7 +8,7 @@ public class Stepik {
             String sb = new StringBuilder(text).reverse().toString();
 
             //StringBuilder(sb).reverse.tostring(sb);
-            System.out.println(sb);
+            //System.out.println(sb);
             if (text == sb) System.out.println("YES");
 
 

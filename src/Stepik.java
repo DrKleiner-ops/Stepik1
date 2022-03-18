@@ -23,17 +23,19 @@ public class Stepik {
         for (int i = 0; i < textLines.length; i++) {     //текст в SB
             ntextLines[i] = new StringBuilder(textLines[i]);
             for (int j = 0; j < nroles.length; j++) {
-                ntextLines[i].replace(nroles[j]);
-
+                //StringBuilder b = i+')';
+                String b = Integer.toString(i+1)+')';
+                textLines[i].replaceFirst(roles[j], b);
+                System.out.println(b);
             }
 
         }
 
 
-        for (int i = 0; i < textLines.length; i++) {    //вывод текста
-            System.out.println(ntextLines[i]);
+        /*for (int i = 0; i < textLines.length; i++) {    //вывод текста
+            System.out.println(textLines[i]);
 
-        }
+        }*/
     }
 }
 
